@@ -4,7 +4,9 @@
 language: java
 
 jdk:
-- oraclejdk8
+- openjdk8
+- openjdk11
+- openjdk12
 
 env:
   global:
@@ -19,6 +21,7 @@ install:
 - sudo apt-get install trang
 - sudo apt-get install imagemagick
 - sudo apt-get install dblatex
+- sudo apt-get install libxml2-utils
 - cp .travis/xmlc ~/.xmlc
 
 script:
